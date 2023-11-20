@@ -1,0 +1,19 @@
+C:\Users\Eduardo\source\repos\Urna do JC\bin\Debug\net7.0-windows\Urna do JC.exe
+C:\Users\Eduardo\source\repos\Urna do JC\bin\Debug\net7.0-windows\Urna do JC.deps.json
+C:\Users\Eduardo\source\repos\Urna do JC\bin\Debug\net7.0-windows\Urna do JC.runtimeconfig.json
+C:\Users\Eduardo\source\repos\Urna do JC\bin\Debug\net7.0-windows\Urna do JC.dll
+C:\Users\Eduardo\source\repos\Urna do JC\bin\Debug\net7.0-windows\Urna do JC.pdb
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna do JC.csproj.GenerateResource.cache
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna do JC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna do JC.AssemblyInfoInputs.cache
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna do JC.AssemblyInfo.cs
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna do JC.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna do JC.dll
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\refint\Urna do JC.dll
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna do JC.pdb
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna do JC.genruntimeconfig.cache
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\ref\Urna do JC.dll
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna_do_JC.FormVotante.resources
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna_do_JC.FormVotos.resources
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna_do_JC.Properties.Resources.resources
+C:\Users\Eduardo\source\repos\Urna do JC\obj\Debug\net7.0-windows\Urna_do_JC.FormResultado.resources
