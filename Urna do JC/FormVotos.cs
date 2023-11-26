@@ -79,7 +79,10 @@ namespace Urna_do_JC
         //Botão que vai basicamente passar o valor dos atributos para o formulario onde o usuário escolhe como ele vai entrar no programa
         private void btn_Prox_Click(object sender, EventArgs e)
         {
-            Contabilizador();
+            pontosCarlos += Contabilizador(btn_Carlos, pontosCarlos);
+            pontosDimitri += Contabilizador(btn_Dimitri, pontosDimitri);
+            pontosGabriel += Contabilizador(btn_Gabriel, pontosGabriel);
+            pontosGustavo += Contabilizador(btn_Gustavo, pontosGustavo);
             instFormVot.pontosCarlos = this.pontosCarlos;
             instFormVot.pontosDimitri = this.pontosDimitri;
             instFormVot.pontosGabriel = this.pontosGabriel;
@@ -92,7 +95,10 @@ namespace Urna_do_JC
         //Botão que vai levar pro formulário de resultados, chamei o Contabilizador pra atribuir aos atributos deste form os valor 
         private void btn_Result_Click(object sender, EventArgs e)
         {
-            Contabilizador();
+            pontosCarlos += Contabilizador(btn_Carlos, pontosCarlos);
+            pontosDimitri += Contabilizador(btn_Dimitri, pontosDimitri);
+            pontosGabriel += Contabilizador(btn_Gabriel, pontosGabriel);
+            pontosGustavo += Contabilizador(btn_Gustavo, pontosGustavo);
             FormResultado frmNew = new FormResultado(this);
             frmNew.Show();
         }
@@ -123,146 +129,44 @@ namespace Urna_do_JC
             }
         }
 
-        private void Contabilizador()
-        {   
-            if(serAluno())
+        private double Contabilizador(Button btn, double pont)
+        {
+            if (serAluno())
             {
-            //VOTOS ALUNOS
-                // Votos do CARLOS
-                if(btn_Carlos.Enabled == false) { 
-                    switch(cont) { 
-                        case 1:
-                            pontosCarlos += 1 * 0.25;
-                            break;
-                        case 2:
-                            pontosCarlos += 0.5 * 0.25;
-                            break;
-                        case 3:
-                            pontosCarlos += 0.3 * 0.25;
-                            break;
-                    }
-                }
-
-                // Votos do GUSTAVO
-                if(btn_Gustavo.Enabled == false)
+                if(btn.Enabled == false)
                 {
-                    switch(cont) 
+                    switch(cont)
                     {
                         case 1:
-                            pontosGustavo += 1 * 0.25;
+                            pont += 1 * 0.25;
                             break;
                         case 2:
-                            pontosGustavo += 0.5 * 0.25;
+                            pont += 0.5 * 0.25;
                             break;
                         case 3:
-                            pontosGustavo += 0.3 * 0.25;
+                            pont += 0.3 * 0.25;
                             break;
                     }
                 }
-
-                //Votos do Dimitri
-                if (btn_Dimitri.Enabled == false)
+            } else
+            {
+                if (btn.Enabled == false)
                 {
                     switch (cont)
                     {
                         case 1:
-                            pontosDimitri += 1 * 0.25;
+                            pont += 1 * 0.75;
                             break;
                         case 2:
-                            pontosDimitri += 0.5 * 0.25;
+                            pont += 0.5 * 0.75;
                             break;
                         case 3:
-                            pontosDimitri += 0.3 * 0.25;
+                            pont += 0.3 * 0.75;
                             break;
                     }
                 }
-                //Votos do GABRIEL
-                if (btn_Gabriel.Enabled == false)
-                {
-                    switch (cont)
-                    {
-                        case 1:
-                            pontosGabriel += 1 * 0.25;
-                            break;
-                        case 2:
-                            pontosGabriel += 0.5 * 0.25;
-                            break;
-                        case 3:
-                            pontosGabriel += 0.3 * 0.25;
-                            break;
-                    }
-                }
-            // VOTO FUNCIONARIO
-            } else {
-
-                // Votos do CARLOS
-                if (btn_Carlos.Enabled == false)
-                {
-                    switch (cont)
-                    {
-                        case 1:
-                            pontosCarlos += 1 * 0.75;
-                            break;
-                        case 2:
-                            pontosCarlos += 0.5 * 0.75;
-                            break;
-                        case 3:
-                            pontosCarlos += 0.3 * 0.75;
-                            break;
-                    }
-                }
-
-                // Votos do GUSTAVO
-                if (btn_Gustavo.Enabled == false)
-                {
-                    switch (cont)
-                    {
-                        case 1:
-                            pontosGustavo += 1 * 0.75;
-                            break;
-                        case 2:
-                            pontosGustavo += 0.5 * 0.75;
-                            break;
-                        case 3:
-                            pontosGustavo += 0.3 * 0.75;
-                            break;
-                    }
-                }
-
-                //Votos do Dimitri
-                if (btn_Dimitri.Enabled == false)
-                {
-                    switch (cont)
-                    {
-                        case 1:
-                            pontosDimitri += 1 * 0.75;
-                            break;
-                        case 2:
-                            pontosDimitri += 0.5 * 0.75;
-                            break;
-                        case 3:
-                            pontosDimitri += 0.3 * 0.75;
-                            break;
-                    }
-                }
-                //Votos do GABRIEL
-                if (btn_Gabriel.Enabled == false)
-                {
-                    switch (cont)
-                    {
-                        case 1:
-                            pontosGabriel += 1 * 0.75;
-                            break;
-                        case 2:
-                            pontosGabriel += 0.5 * 0.75;
-                            break;
-                        case 3:
-                            pontosGabriel += 0.3 * 0.75;
-                            break;
-                    }
-                }
-
             }
+            return pont;
         }
     }
 }

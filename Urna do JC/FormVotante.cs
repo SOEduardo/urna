@@ -31,5 +31,10 @@ namespace Urna_do_JC
             FormVotos newFrm = new FormVotos(this);
             newFrm.Show();
         }
+
+        private void FormVotante_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -76,6 +76,7 @@
             Controls.Add(label1);
             Name = "FormVotante";
             Text = "FormVotante";
+            Load += FormVotante_Load;
             ResumeLayout(false);
             PerformLayout();
         }
