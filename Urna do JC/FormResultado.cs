@@ -23,10 +23,11 @@ namespace Urna_do_JC
 
         public void Porcentagem()
         {
-            porcentCarlos = (100 * votos.pontosCarlos) / votos.total;
-            porcentDimitri = (100 * votos.pontosDimitri) / votos.total;
-            porcentGabriel = (100 * votos.pontosGabriel) / votos.total;
-            porcentGustavo = (100 * votos.pontosGustavo) / votos.total;
+            double total = votos.pontosCarlos + votos.pontosDimitri + votos.pontosGabriel + votos.pontosGustavo;
+            porcentCarlos = (100 * votos.pontosCarlos) / total;
+            porcentDimitri = (100 * votos.pontosDimitri) / total;
+            porcentGabriel = (100 * votos.pontosGabriel) / total;
+            porcentGustavo = (100 * votos.pontosGustavo) / total;
         }
 
         private void FormResultado_Load(object sender, EventArgs e)
