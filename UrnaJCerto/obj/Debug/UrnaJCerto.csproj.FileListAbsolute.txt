@@ -1,0 +1,12 @@
+C:\Users\Eduardo\source\repos\UrnaJCerto\bin\Debug\UrnaJCerto.exe.config
+C:\Users\Eduardo\source\repos\UrnaJCerto\bin\Debug\UrnaJCerto.exe
+C:\Users\Eduardo\source\repos\UrnaJCerto\bin\Debug\UrnaJCerto.pdb
+C:\Users\Eduardo\source\repos\UrnaJCerto\obj\Debug\UrnaJCerto.csproj.AssemblyReference.cache
+C:\Users\Eduardo\source\repos\UrnaJCerto\obj\Debug\UrnaJCerto.Properties.Resources.resources
+C:\Users\Eduardo\source\repos\UrnaJCerto\obj\Debug\UrnaJCerto.csproj.GenerateResource.cache
+C:\Users\Eduardo\source\repos\UrnaJCerto\obj\Debug\UrnaJCerto.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\source\repos\UrnaJCerto\obj\Debug\UrnaJCerto.exe
+C:\Users\Eduardo\source\repos\UrnaJCerto\obj\Debug\UrnaJCerto.pdb
+C:\Users\Eduardo\source\repos\UrnaJCerto\obj\Debug\UrnaJCerto.FormResultado.resources
+C:\Users\Eduardo\source\repos\UrnaJCerto\obj\Debug\UrnaJCerto.FormVotos.resources
+C:\Users\Eduardo\source\repos\UrnaJCerto\obj\Debug\UrnaJCerto.FormVotante.resources
