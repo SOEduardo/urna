@@ -1,4 +1,4 @@
-﻿namespace Talvez
+﻿namespace UrnaJCerto
 {
     partial class GradientPanel
     {

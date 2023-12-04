@@ -19,6 +19,9 @@ namespace UrnaJCerto
         {
             CriarBotaoArredondado(btn_Aluno); 
             CriarBotaoArredondado(btn_Funcionario);
+            label1.Parent = gradientPanel1;
+            btn_Funcionario.Parent = gradientPanel1;
+            btn_Aluno.Parent = gradientPanel1;  
         }
 
         private void btn_Funcionario_Click_1(object sender, EventArgs e)

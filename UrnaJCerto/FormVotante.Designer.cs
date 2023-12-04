@@ -35,11 +35,13 @@ namespace UrnaJCerto
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Aluno = new System.Windows.Forms.Button();
             this.btn_Funcionario = new System.Windows.Forms.Button();
+            this.gradientPanel1 = new UrnaJCerto.GradientPanel();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(54, 57);
@@ -81,6 +83,18 @@ namespace UrnaJCerto
             this.btn_Funcionario.UseVisualStyleBackColor = false;
             this.btn_Funcionario.Click += new System.EventHandler(this.btn_Funcionario_Click_1);
             // 
+            // gradientPanel1
+            // 
+            this.gradientPanel1.angle = 90F;
+            this.gradientPanel1.corA = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(120)))), ((int)(((byte)(244)))));
+            this.gradientPanel1.corB = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(168)))), ((int)(((byte)(250)))));
+            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Size = new System.Drawing.Size(863, 561);
+            this.gradientPanel1.TabIndex = 3;
+            this.gradientPanel1.Text = "gradientPanel1";
+            // 
             // FormVotante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -90,6 +104,7 @@ namespace UrnaJCerto
             this.Controls.Add(this.btn_Funcionario);
             this.Controls.Add(this.btn_Aluno);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.gradientPanel1);
             this.Name = "FormVotante";
             this.Text = "FormVotante";
             this.Load += new System.EventHandler(this.FormVotante_Load);
@@ -103,5 +118,6 @@ namespace UrnaJCerto
         private Label label1;
         private Button btn_Aluno;
         private Button btn_Funcionario;
+        private GradientPanel gradientPanel1;
     }
 }

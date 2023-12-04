@@ -32,41 +32,43 @@ namespace UrnaJCerto
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVotos));
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelText = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelCarlos = new System.Windows.Forms.Label();
             this.btn_Carlos = new System.Windows.Forms.Button();
             this.btn_Result = new System.Windows.Forms.Button();
             this.btn_Prox = new System.Windows.Forms.Button();
             this.btn_Dimitri = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelDimitri = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_Gabriel = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelBiel = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btn_Gustavo = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelGustavo = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.gradientPanel1 = new UrnaJCerto.GradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // labelText
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(192)))), ((int)(((byte)(252)))));
-            this.label1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(271, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(342, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Escolha até 3 candidatos";
+            this.labelText.AutoSize = true;
+            this.labelText.BackColor = System.Drawing.Color.Transparent;
+            this.labelText.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold);
+            this.labelText.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelText.Location = new System.Drawing.Point(271, 26);
+            this.labelText.Name = "labelText";
+            this.labelText.Size = new System.Drawing.Size(342, 32);
+            this.labelText.TabIndex = 0;
+            this.labelText.Text = "Escolha até 3 candidatos";
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(130, 98);
             this.pictureBox1.Name = "pictureBox1";
@@ -75,15 +77,16 @@ namespace UrnaJCerto
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // labelCarlos
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(162, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 22);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Carlos";
+            this.labelCarlos.AutoSize = true;
+            this.labelCarlos.BackColor = System.Drawing.Color.Transparent;
+            this.labelCarlos.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCarlos.Location = new System.Drawing.Point(158, 71);
+            this.labelCarlos.Name = "labelCarlos";
+            this.labelCarlos.Size = new System.Drawing.Size(71, 22);
+            this.labelCarlos.TabIndex = 5;
+            this.labelCarlos.Text = "Carlos";
             // 
             // btn_Carlos
             // 
@@ -92,7 +95,7 @@ namespace UrnaJCerto
             this.btn_Carlos.FlatAppearance.BorderSize = 0;
             this.btn_Carlos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Carlos.Font = new System.Drawing.Font("Arial", 12F);
-            this.btn_Carlos.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Carlos.ForeColor = System.Drawing.Color.Black;
             this.btn_Carlos.Location = new System.Drawing.Point(158, 253);
             this.btn_Carlos.Name = "btn_Carlos";
             this.btn_Carlos.Size = new System.Drawing.Size(72, 27);
@@ -107,7 +110,7 @@ namespace UrnaJCerto
             this.btn_Result.FlatAppearance.BorderSize = 0;
             this.btn_Result.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Result.Font = new System.Drawing.Font("Arial", 12F);
-            this.btn_Result.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btn_Result.ForeColor = System.Drawing.Color.Black;
             this.btn_Result.Location = new System.Drawing.Point(386, 480);
             this.btn_Result.Name = "btn_Result";
             this.btn_Result.Size = new System.Drawing.Size(87, 30);
@@ -122,7 +125,7 @@ namespace UrnaJCerto
             this.btn_Prox.FlatAppearance.BorderSize = 0;
             this.btn_Prox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Prox.Font = new System.Drawing.Font("Arial", 12F);
-            this.btn_Prox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btn_Prox.ForeColor = System.Drawing.Color.Black;
             this.btn_Prox.Location = new System.Drawing.Point(377, 257);
             this.btn_Prox.Name = "btn_Prox";
             this.btn_Prox.Size = new System.Drawing.Size(110, 30);
@@ -138,27 +141,29 @@ namespace UrnaJCerto
             this.btn_Dimitri.FlatAppearance.BorderSize = 0;
             this.btn_Dimitri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Dimitri.Font = new System.Drawing.Font("Arial", 12F);
-            this.btn_Dimitri.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btn_Dimitri.ForeColor = System.Drawing.Color.Black;
             this.btn_Dimitri.Location = new System.Drawing.Point(630, 253);
             this.btn_Dimitri.Name = "btn_Dimitri";
             this.btn_Dimitri.Size = new System.Drawing.Size(72, 27);
             this.btn_Dimitri.TabIndex = 17;
             this.btn_Dimitri.Text = "Votar";
             this.btn_Dimitri.UseVisualStyleBackColor = false;
+            this.btn_Dimitri.Click += new System.EventHandler(this.btn_Dimitri_Click);
             // 
-            // label3
+            // labelDimitri
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(634, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 22);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Dimitri";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.labelDimitri.AutoSize = true;
+            this.labelDimitri.BackColor = System.Drawing.Color.Transparent;
+            this.labelDimitri.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDimitri.Location = new System.Drawing.Point(632, 71);
+            this.labelDimitri.Name = "labelDimitri";
+            this.labelDimitri.Size = new System.Drawing.Size(70, 22);
+            this.labelDimitri.TabIndex = 16;
+            this.labelDimitri.Text = "Dimitri";
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(602, 98);
             this.pictureBox2.Name = "pictureBox2";
@@ -174,26 +179,29 @@ namespace UrnaJCerto
             this.btn_Gabriel.FlatAppearance.BorderSize = 0;
             this.btn_Gabriel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Gabriel.Font = new System.Drawing.Font("Arial", 12F);
-            this.btn_Gabriel.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btn_Gabriel.ForeColor = System.Drawing.Color.Black;
             this.btn_Gabriel.Location = new System.Drawing.Point(158, 484);
             this.btn_Gabriel.Name = "btn_Gabriel";
             this.btn_Gabriel.Size = new System.Drawing.Size(72, 27);
             this.btn_Gabriel.TabIndex = 20;
             this.btn_Gabriel.Text = "Votar";
             this.btn_Gabriel.UseVisualStyleBackColor = false;
+            this.btn_Gabriel.Click += new System.EventHandler(this.btn_Gabriel_Click);
             // 
-            // label4
+            // labelBiel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(162, 302);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 22);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Gabriel";
+            this.labelBiel.AutoSize = true;
+            this.labelBiel.BackColor = System.Drawing.Color.Transparent;
+            this.labelBiel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBiel.Location = new System.Drawing.Point(156, 302);
+            this.labelBiel.Name = "labelBiel";
+            this.labelBiel.Size = new System.Drawing.Size(77, 22);
+            this.labelBiel.TabIndex = 19;
+            this.labelBiel.Text = "Gabriel";
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(130, 329);
             this.pictureBox3.Name = "pictureBox3";
@@ -209,26 +217,29 @@ namespace UrnaJCerto
             this.btn_Gustavo.FlatAppearance.BorderSize = 0;
             this.btn_Gustavo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Gustavo.Font = new System.Drawing.Font("Arial", 12F);
-            this.btn_Gustavo.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btn_Gustavo.ForeColor = System.Drawing.Color.Black;
             this.btn_Gustavo.Location = new System.Drawing.Point(630, 484);
             this.btn_Gustavo.Name = "btn_Gustavo";
             this.btn_Gustavo.Size = new System.Drawing.Size(72, 27);
             this.btn_Gustavo.TabIndex = 23;
             this.btn_Gustavo.Text = "Votar";
             this.btn_Gustavo.UseVisualStyleBackColor = false;
+            this.btn_Gustavo.Click += new System.EventHandler(this.btn_Gustavo_Click);
             // 
-            // label5
+            // labelGustavo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(634, 302);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 22);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Gustavo";
+            this.labelGustavo.AutoSize = true;
+            this.labelGustavo.BackColor = System.Drawing.Color.Transparent;
+            this.labelGustavo.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGustavo.Location = new System.Drawing.Point(623, 302);
+            this.labelGustavo.Name = "labelGustavo";
+            this.labelGustavo.Size = new System.Drawing.Size(88, 22);
+            this.labelGustavo.TabIndex = 22;
+            this.labelGustavo.Text = "Gustavo";
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(602, 329);
             this.pictureBox4.Name = "pictureBox4";
@@ -237,6 +248,18 @@ namespace UrnaJCerto
             this.pictureBox4.TabIndex = 21;
             this.pictureBox4.TabStop = false;
             // 
+            // gradientPanel1
+            // 
+            this.gradientPanel1.angle = 90F;
+            this.gradientPanel1.corA = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(120)))), ((int)(((byte)(244)))));
+            this.gradientPanel1.corB = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(168)))), ((int)(((byte)(250)))));
+            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Size = new System.Drawing.Size(863, 561);
+            this.gradientPanel1.TabIndex = 24;
+            this.gradientPanel1.Text = "gradientPanel1";
+            // 
             // FormVotos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,20 +267,21 @@ namespace UrnaJCerto
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(192)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(863, 561);
             this.Controls.Add(this.btn_Gustavo);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelGustavo);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btn_Gabriel);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelBiel);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btn_Dimitri);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelDimitri);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_Prox);
             this.Controls.Add(this.btn_Result);
             this.Controls.Add(this.btn_Carlos);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelCarlos);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelText);
+            this.Controls.Add(this.gradientPanel1);
             this.Name = "FormVotos";
             this.Text = "FormVotos";
             this.Load += new System.EventHandler(this.FormVotos_Load);
@@ -272,20 +296,21 @@ namespace UrnaJCerto
 
         #endregion
 
-        private Label label1;
+        private Label labelText;
         private PictureBox pictureBox1;
-        private Label label2;
+        private Label labelCarlos;
         private Button btn_Carlos;
         private Button btn_Result;
         private Button btn_Prox;
         private Button btn_Dimitri;
-        private Label label3;
+        private Label labelDimitri;
         private PictureBox pictureBox2;
         private Button btn_Gabriel;
-        private Label label4;
+        private Label labelBiel;
         private PictureBox pictureBox3;
         private Button btn_Gustavo;
-        private Label label5;
+        private Label labelGustavo;
         private PictureBox pictureBox4;
+        private GradientPanel gradientPanel1;
     }
 }

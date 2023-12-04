@@ -28,54 +28,23 @@ namespace UrnaJCerto
             this.pontosGabriel = frmVotante.pontosGabriel;
             this.pontosDimitri = frmVotante.pontosDimitri;
             this.pontosCarlos = frmVotante.pontosCarlos;
-            total = pontosCarlos + pontosDimitri + pontosGabriel + pontosGustavo;
+            this.total = pontosCarlos + pontosDimitri + pontosGabriel + pontosGustavo;
             cont = 0;
         }
 
-
-        //metodo random q n apaguei pra n dar problema
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        ///
-        /// Metodos para executar as ações de quando clicar no botão
-        ///
-
         private void FormVotos_Load(object sender, EventArgs e)
         {
-
+            labelText.Parent = gradientPanel1;
+            labelBiel.Parent = gradientPanel1;
+            labelCarlos.Parent = gradientPanel1;
+            labelGustavo.Parent = gradientPanel1;   
+            labelDimitri.Parent = gradientPanel1;
         }
 
         private void btn_Carlos_Click_1(object sender, EventArgs e)
         {
             btn_Carlos.Enabled = false;
             btn_Carlos.BackColor = Color.Black;
-            cont++;
-            Fim();
-        }
-
-        private void btn_Dimitri_Click_1(object sender, EventArgs e)
-        {
-            btn_Dimitri.Enabled = false;
-            btn_Dimitri.BackColor = Color.Black;
-            cont++;
-            Fim();
-        }
-
-        private void btn_Gabriel_Click_1(object sender, EventArgs e)
-        {
-            btn_Gabriel.Enabled = false;
-            btn_Gabriel.BackColor = Color.Black;
-            cont++;
-            Fim();
-        }
-
-        private void btn_Gustavo_Click_1(object sender, EventArgs e)
-        {
-            btn_Gustavo.Enabled = false;
-            btn_Gustavo.BackColor = Color.Black;
             cont++;
             Fim();
         }
@@ -97,9 +66,28 @@ namespace UrnaJCerto
             this.Close();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void btn_Gabriel_Click(object sender, EventArgs e)
         {
+            btn_Gabriel.Enabled = false;
+            btn_Gabriel.BackColor = Color.Black;
+            cont++;
+            Fim();
+        }
 
+        private void btn_Gustavo_Click(object sender, EventArgs e)
+        {
+            btn_Gustavo.Enabled = false;
+            btn_Gustavo.BackColor = Color.Black;
+            cont++;
+            Fim();
+        }
+
+        private void btn_Dimitri_Click(object sender, EventArgs e)
+        {
+            btn_Dimitri.Enabled = false;
+            btn_Dimitri.BackColor = Color.Black;
+            cont++;
+            Fim();
         }
 
 
